@@ -36,7 +36,7 @@ run_analysis <- function () {
     dfTest <- NULL
     dfTrain <- NULL
     
-    # Add subscriptive names to all variables (columns). Subscriptive names are obtained form features.txt
+    # Add descriptive names to all variables (columns). Subscriptive names are obtained form features.txt
     strFile<- "./features.txt"
     dfColNames <- read.table(strFile, header=FALSE, sep="") 
     strColNames <- c("Subject.No","Activity.id",as.character(dfColNames[,2]))
